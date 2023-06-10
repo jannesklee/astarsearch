@@ -39,6 +39,9 @@ vector<int> a_star(int start_id, int goal_id, const map<int, Node>& nodes, const
         }
         path.push_back(start_id);
         reverse(path.begin(), path.end());
+    } else {
+        cout << "No path found from " << start_id << " to " << goal_id << endl;
+        path.push_back(start_id); // return start_id as the only node in the path
     }
 
     return path;
