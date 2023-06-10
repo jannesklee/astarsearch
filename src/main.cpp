@@ -16,6 +16,7 @@ int main() {
 
     // Construct map from id to Node
     map<int, Node> nodes;
+
     for (const Node& node : nodes_vec) {
         nodes[node.id] = node;
     }

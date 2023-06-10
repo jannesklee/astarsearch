@@ -5,13 +5,13 @@
 
 using namespace std;
 
-string line, segment;
-vector<string> seglist;
 
 vector<Edge> read_edges(const string& file) {
     ifstream in(file);
-    string line;
     vector<Edge> edges;
+    string line, segment;
+    vector<string> seglist;
+
     while (getline(in, line)) {
         if (line[0] == '#') continue; // ignore comments
         stringstream ss(line);
